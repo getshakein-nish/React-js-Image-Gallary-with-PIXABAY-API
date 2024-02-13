@@ -19,6 +19,7 @@ function App() {
 
   return (
     <div className="container mx-auto">
+       <h1 class=" text-center font-bold text-4xl  m-4 text-blue-500">pixabay Search</h1>
       <ImageSearch searchText={(text) => setTerm(text)} />
       
       {!isLoading && images.length == 0 && <h1 className='text-5xl text-center mx-auto mt-32'>No Images Found</h1> }
